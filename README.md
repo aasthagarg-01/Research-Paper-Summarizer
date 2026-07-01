@@ -623,3 +623,140 @@ This project provided practical experience in:
 - Docker-based Deployment
 - End-to-End Machine Learning System Design
 - Git and GitHub based collaborative development
+
+  # References
+
+The project is built upon several open-source libraries, transformer models, and research publications.
+
+- Lewis, M. et al. **BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension.** ACL 2020.
+- Beltagy, I., Peters, M., & Cohan, A. **Longformer: The Long-Document Transformer.**
+- Beltagy, I., Lo, K., & Cohan, A. **SciBERT: A Pretrained Language Model for Scientific Text.**
+- Grootendorst, M. **KeyBERT: Minimal Keyword Extraction with BERT Embeddings.**
+- Hugging Face Transformers
+- Sentence Transformers
+- PyMuPDF Documentation
+- arXiv API Documentation
+
+---
+
+# Repository Overview
+
+```
+Research-Paper-Summarizer
+│
+├── data/                  # Input data and downloaded papers
+├── models/                # Model files
+├── notebooks/             # Jupyter notebooks
+├── references/            # Research references
+├── reports/               # Project reports
+├── scripts/               # Utility scripts
+│
+├── src/
+│   ├── backend/           # Backend services
+│   └── frontend/          # Streamlit application
+│
+├── README.md
+├── docker-compose.yaml
+├── .gitignore
+└── ResearchPaperSummarizer.ipynb
+```
+
+---
+
+# Project Highlights
+
+- Developed an end-to-end AI application for scientific paper summarization.
+- Implemented a hybrid Extractive–Abstractive NLP pipeline.
+- Integrated transformer-based summarization for long documents.
+- Built an interactive Streamlit application for research paper analysis.
+- Enabled direct paper retrieval through arXiv integration.
+- Designed an automated methodology visualization module.
+- Containerized the application using Docker for reproducible deployment.
+
+---
+
+# Skills Demonstrated
+
+This project demonstrates practical experience in:
+
+- Python
+- Natural Language Processing (NLP)
+- Transformer Models
+- Deep Learning
+- Sentence Embeddings
+- Scientific Text Mining
+- Information Retrieval
+- Streamlit
+- Docker
+- REST API Integration
+- Git & GitHub
+
+---
+
+# Possible Interview Questions
+
+This project helped build understanding of:
+
+- Why LED was selected over BART or T5 for long-document summarization.
+- Differences between extractive and abstractive summarization.
+- Semantic sentence embeddings.
+- Keyword extraction using contextual embeddings.
+- Challenges in processing long scientific documents.
+- Transformer architectures for NLP.
+- PDF parsing and preprocessing.
+- Streamlit application development.
+- Docker containerization.
+- Building production-oriented NLP applications.
+
+---
+
+# Future Scope
+
+Potential directions for extending this project include:
+
+- Fine-tuning LED on scientific summarization datasets.
+- Multi-document summarization.
+- Citation-aware summarization.
+- Figure and table understanding.
+- Mathematical equation summarization.
+- OCR support for scanned PDFs.
+- Cross-paper comparison.
+- Research paper recommendation system.
+- Browser extension for instant summarization.
+- Cloud deployment with user authentication.
+
+---
+
+# Authors
+
+**Aastha Garg**
+
+Computer Engineering Undergraduate  
+Thapar Institute of Engineering & Technology
+
+GitHub: https://github.com/aasthagarg-01
+
+---
+
+**Vaibhavi Jain**
+
+Computer Engineering Undergraduate  
+Thapar Institute of Engineering & Technology
+
+---
+
+# Acknowledgements
+
+We would like to thank the open-source community and the developers of Hugging Face Transformers, Sentence Transformers, KeyBERT, SciBERT, PyMuPDF, Streamlit, Docker, and the arXiv platform for making this project possible.
+
+---
+
+# License
+
+This project is intended for educational and research purposes.
+
+Feel free to fork, modify, and extend the project while providing appropriate attribution.
+
+---
+
+## If you found this project useful, consider giving it a ⭐ on GitHub.

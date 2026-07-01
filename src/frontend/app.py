@@ -3,7 +3,7 @@ import requests
 import streamlit as st
 
 # Initialization
-API_URL = 'http://backend:8000/summarize'
+API_URL = 'http://localhost:8000/summarize'
 
 # Main UI
 st.title("Research Paper Summarization Engine")

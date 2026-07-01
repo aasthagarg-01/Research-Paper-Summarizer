@@ -396,18 +396,11 @@ Although the application performs well on long scientific documents, a few limit
 
 # Future Improvements
 
-Potential enhancements include:
-
-- Fine-tuning transformer models on scientific corpora.
-- Support for multimodal summarization of text, figures, and equations.
-- OCR integration for scanned research papers.
-- Citation graph visualization.
-- Automatic paper recommendation system.
-- Multi-document summarization.
-- Domain-specific summarization modes.
-- Browser extension for one-click paper summarization.
-- Support for additional academic repositories beyond arXiv.
-- Quantitative evaluation using ROUGE and BLEU metrics.
+- Fine-tune transformer models on scientific datasets.
+- Support multimodal summarization of text, figures, and equations.
+- Integrate OCR for scanned research papers.
+- Enable multi-document and citation-aware summarization.
+- Add ROUGE and BLEU based evaluation.
 
 ---
 
@@ -429,10 +422,7 @@ This project builds upon the following open-source models, libraries, and resear
 
 Computer Engineering Undergraduate  
 Thapar Institute of Engineering & Technology
-
 GitHub: https://github.com/aasthagarg-01
-
----
 
 **Vaibhavi Jain**
 

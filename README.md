@@ -394,20 +394,6 @@ The generated summaries consistently captured the primary research objective, me
 
 ---
 
-# Performance Summary
-
-| Metric | Observation |
-|----------|------------|
-| Input Documents | Long scientific research papers |
-| Summary Length | Approximately 20–30% of original paper |
-| Context Preservation | High |
-| Technical Terminology | Preserved |
-| Scientific Keyword Extraction | Accurate |
-| Long Document Handling | Excellent |
-| Overall Readability | High |
-
----
-
 # BERTScore Evaluation
 
 The generated summaries were evaluated using **BERTScore**, which measures semantic similarity between generated summaries and reference summaries.

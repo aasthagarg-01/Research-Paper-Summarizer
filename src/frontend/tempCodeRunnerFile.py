@@ -1,1 +1,0 @@
-http://backend:8000/summarize

@@ -11,18 +11,6 @@
 
 ---
 
-# Table of Contents
-
-- [Overview](#overview)
-- [Problem Statement](#problem-statement)
-- [Key Features](#key-features)
-- [System Architecture](#system-architecture)
-- [Processing Pipeline](#processing-pipeline)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-
----
-
 # Overview
 
 Scientific research papers contain valuable knowledge but are often lengthy, highly technical, and time-consuming to understand. Researchers and students spend a significant amount of time reading multiple papers before identifying the most relevant information.
@@ -34,22 +22,6 @@ The system combines semantic extractive summarization with transformer-based abs
 In addition to summarization, the application extracts scientific keywords, identifies important entities such as models and datasets, and generates methodology flowcharts to improve comprehension of research workflows.
 
 The application provides a simple Streamlit-based interface where users can upload research papers in PDF format or retrieve papers directly from arXiv.
-
----
-
-# Problem Statement
-
-With thousands of scientific papers published every day, manually reviewing literature has become increasingly challenging.
-
-Traditional summarization techniques often suffer from one or more of the following limitations:
-
-- Poor understanding of scientific terminology
-- Loss of contextual information
-- Fragmented sentence selection
-- Inability to process long research papers
-- Lack of structured insights for technical documents
-
-This project addresses these challenges by combining extractive and abstractive NLP techniques specifically designed for long scientific documents.
 
 ---
 
@@ -373,19 +345,6 @@ The generated output includes:
 
 ---
 
-# Key Contributions
-
-- Designed a hybrid extractive–abstractive summarization pipeline.
-- Implemented long-document summarization using the LED Transformer.
-- Integrated scientific keyword extraction using KeyBERT and SciBERT.
-- Added automatic methodology flowchart generation.
-- Built a complete end-to-end Streamlit application with PDF upload and arXiv integration.
-- Containerized the application using Docker for reproducible deployment.
-
----
-
-The following sections describe the implementation details, NLP models, workflow, experimental evaluation, installation instructions, and usage of the system.
-
 # Experimental Results
 
 The proposed hybrid summarization pipeline was evaluated on multiple scientific research papers obtained through both PDF uploads and the arXiv API.
@@ -423,108 +382,6 @@ The evaluation indicates that the generated summaries retain most of the semanti
 
 ---
 
-# Key Highlights
-
-The proposed system successfully:
-
-- Processes long scientific research papers without losing contextual information.
-- Produces coherent abstractive summaries using transformer-based models.
-- Extracts scientifically relevant keywords and entities.
-- Automatically identifies important methodological steps.
-- Generates structured workflow diagrams from research methodologies.
-- Provides an intuitive interface suitable for literature review.
-
----
-
-# Sample Processing Pipeline
-
-```text
-Research Paper
-      │
-      ▼
-PDF Parsing
-      │
-      ▼
-Section Segmentation
-      │
-      ▼
-Sentence Embeddings
-      │
-      ▼
-Extractive Ranking
-      │
-      ▼
-LED Summarization
-      │
-      ▼
-Keyword Extraction
-      │
-      ▼
-Entity Detection
-      │
-      ▼
-Methodology Flowchart
-      │
-      ▼
-Interactive Dashboard
-```
-
----
-
-# Application Screenshots
-
-The following screenshots demonstrate different stages of the application.
-
-## Home Page
-
-> *(Add screenshot here)*
-
-```md
-![Home](images/home.png)
-```
-
----
-
-## Upload Research Paper
-
-> *(Add screenshot here)*
-
-```md
-![Upload](images/upload.png)
-```
-
----
-
-## Generated Summary
-
-> *(Add screenshot here)*
-
-```md
-![Summary](images/summary.png)
-```
-
----
-
-## Scientific Keyword Extraction
-
-> *(Add screenshot here)*
-
-```md
-![Keywords](images/keywords.png)
-```
-
----
-
-## Methodology Flowchart
-
-> *(Add screenshot here)*
-
-```md
-![Flowchart](images/flowchart.png)
-```
-
----
-
 # Current Limitations
 
 Although the application performs well on long scientific documents, a few limitations remain.
@@ -554,121 +411,15 @@ Potential enhancements include:
 
 ---
 
-# Learning Outcomes
+## References
 
-This project provided practical experience in:
+This project builds upon the following open-source models, libraries, and research papers:
 
-- Natural Language Processing (NLP)
-- Transformer-based Deep Learning Models
-- Long Document Summarization
-- Scientific Text Processing
-- PDF Parsing
-- Semantic Embedding Generation
-- Streamlit Application Development
-- Docker-based Deployment
-- End-to-End Machine Learning System Design
-- Git and GitHub based collaborative development
-
-  # References
-
-The project is built upon several open-source libraries, transformer models, and research publications.
-
-- Lewis, M. et al. **BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension.** ACL 2020.
-- Beltagy, I., Peters, M., & Cohan, A. **Longformer: The Long-Document Transformer.**
-- Beltagy, I., Lo, K., & Cohan, A. **SciBERT: A Pretrained Language Model for Scientific Text.**
-- Grootendorst, M. **KeyBERT: Minimal Keyword Extraction with BERT Embeddings.**
-- Hugging Face Transformers
-- Sentence Transformers
-- PyMuPDF Documentation
-- arXiv API Documentation
-
----
-
-# Repository Overview
-
-```
-Research-Paper-Summarizer
-│
-├── data/                  # Input data and downloaded papers
-├── models/                # Model files
-├── notebooks/             # Jupyter notebooks
-├── references/            # Research references
-├── reports/               # Project reports
-├── scripts/               # Utility scripts
-│
-├── src/
-│   ├── backend/           # Backend services
-│   └── frontend/          # Streamlit application
-│
-├── README.md
-├── docker-compose.yaml
-├── .gitignore
-└── ResearchPaperSummarizer.ipynb
-```
-
----
-
-# Project Highlights
-
-- Developed an end-to-end AI application for scientific paper summarization.
-- Implemented a hybrid Extractive–Abstractive NLP pipeline.
-- Integrated transformer-based summarization for long documents.
-- Built an interactive Streamlit application for research paper analysis.
-- Enabled direct paper retrieval through arXiv integration.
-- Designed an automated methodology visualization module.
-- Containerized the application using Docker for reproducible deployment.
-
----
-
-# Skills Demonstrated
-
-This project demonstrates practical experience in:
-
-- Python
-- Natural Language Processing (NLP)
-- Transformer Models
-- Deep Learning
-- Sentence Embeddings
-- Scientific Text Mining
-- Information Retrieval
-- Streamlit
-- Docker
-- REST API Integration
-- Git & GitHub
-
----
-
-# Possible Interview Questions
-
-This project helped build understanding of:
-
-- Why LED was selected over BART or T5 for long-document summarization.
-- Differences between extractive and abstractive summarization.
-- Semantic sentence embeddings.
-- Keyword extraction using contextual embeddings.
-- Challenges in processing long scientific documents.
-- Transformer architectures for NLP.
-- PDF parsing and preprocessing.
-- Streamlit application development.
-- Docker containerization.
-- Building production-oriented NLP applications.
-
----
-
-# Future Scope
-
-Potential directions for extending this project include:
-
-- Fine-tuning LED on scientific summarization datasets.
-- Multi-document summarization.
-- Citation-aware summarization.
-- Figure and table understanding.
-- Mathematical equation summarization.
-- OCR support for scanned PDFs.
-- Cross-paper comparison.
-- Research paper recommendation system.
-- Browser extension for instant summarization.
-- Cloud deployment with user authentication.
+1. **Longformer: The Long-Document Transformer** — Beltagy, Peters & Cohan (2020)
+2. **SciBERT: A Pretrained Language Model for Scientific Text** — Beltagy, Lo & Cohan (2019)
+3. **KeyBERT** — Minimal Keyword Extraction with BERT Embeddings
+4. **Hugging Face Transformers**
+5. **Sentence Transformers**
 
 ---
 
@@ -687,12 +438,6 @@ GitHub: https://github.com/aasthagarg-01
 
 Computer Engineering Undergraduate  
 Thapar Institute of Engineering & Technology
-
----
-
-# Acknowledgements
-
-We would like to thank the open-source community and the developers of Hugging Face Transformers, Sentence Transformers, KeyBERT, SciBERT, PyMuPDF, Streamlit, Docker, and the arXiv platform for making this project possible.
 
 ---
 

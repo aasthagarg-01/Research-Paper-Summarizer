@@ -421,7 +421,7 @@ This project builds upon the following open-source models, libraries, and resear
 **Aastha Garg**
 
 Computer Engineering Undergraduate  
-Thapar Institute of Engineering & Technology
+Thapar Institute of Engineering & Technology 
 GitHub: https://github.com/aasthagarg-01
 
 **Vaibhavi Jain**

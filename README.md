@@ -430,13 +430,3 @@ Computer Engineering Undergraduate
 Thapar Institute of Engineering & Technology
 
 ---
-
-# License
-
-This project is intended for educational and research purposes.
-
-Feel free to fork, modify, and extend the project while providing appropriate attribution.
-
----
-
-## If you found this project useful, consider giving it a ⭐ on GitHub.
